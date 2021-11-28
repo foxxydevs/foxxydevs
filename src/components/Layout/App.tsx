@@ -1,5 +1,7 @@
+import CodeWrapper from '../Code/CodeWrapper';
+
 function App() {
-  return <div className='App'>Hello From React!</div>;
+  return <CodeWrapper />;
 }
 
 export default App;
