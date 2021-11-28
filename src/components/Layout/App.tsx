@@ -1,7 +1,7 @@
-import CodeWrapper from '../Code/CodeWrapper';
+import Layout from './Layout';
 
 function App() {
-  return <CodeWrapper />;
+  return <Layout></Layout>;
 }
 
 export default App;
