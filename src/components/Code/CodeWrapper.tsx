@@ -1,19 +1,18 @@
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import theme from 'prism-react-renderer/themes/nightOwl';
+import React from 'react';
 import './_Code.scss';
 
-const exampleCode = `
-function someDemo() {
-  var test = "Hello World!";
-  console.log(test);
-}`;
+type Props = {
+  code: string;
+};
 
-const CodeWrapper = () => (
+const CodeWrapper: React.FC<Props> = (props) => (
   <div className='wrapper-code'>
     <Highlight
       {...defaultProps}
       theme={theme}
-      code={exampleCode}
+      code={props.code}
       language={'jsx'}
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
