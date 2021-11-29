@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Layout = () => {
-  return <div></div>;
+type LayoutProps = {
+  children: React.ReactNode;
+};
+
+const Layout: React.FC<LayoutProps> = (props) => {
+  return <div>{props.children}</div>;
 };
 
 export default Layout;
