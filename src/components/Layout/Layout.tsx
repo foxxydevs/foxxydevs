@@ -1,18 +1,11 @@
 import React from 'react';
-import CodeWrapper from '../Code/CodeWrapper';
 
-const exampleCode = `
-function someDemo() {
-  var test = "Hello World!";
-  console.log(test);
-}`;
+type LayoutProps = {
+  children: React.ReactNode;
+};
 
-const Layout = () => {
-  return (
-    <div>
-      <CodeWrapper code={exampleCode} />
-    </div>
-  );
+const Layout: React.FC<LayoutProps> = (props) => {
+  return <div>{props.children}</div>;
 };
 
 export default Layout;

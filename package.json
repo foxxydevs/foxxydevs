@@ -26,6 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src",
+    "prepare": "husky install",
     "prettier:fix": "prettier --write",
     "prettier:check": "prettier --check ."
   },
