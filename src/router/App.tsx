@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import NotFound from '../pages/404Pages/NotFound';
 import HomePages from '../pages/HomePages/HomePages';
 
 function App() {
@@ -6,8 +7,11 @@ function App() {
     <Router>
       {/* Switch is replaced by Routes */}
       <Switch>
-        <Route path='/'>
+        <Route exact path='/'>
           <HomePages />
+        </Route>
+        <Route path='*'>
+          <NotFound />
         </Route>
       </Switch>
     </Router>
