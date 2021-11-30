@@ -1,15 +1,13 @@
 import { Helmet } from 'react-helmet';
+import About from '../../components/ArtboardComponent/About/About';
 
 const HomePages = () => {
   return (
     <>
       <Helmet>
-        <title>Welcome | RTSX</title>
+        <title>Selamat Datang | RTSX Bahasa Indonesia</title>
       </Helmet>
-
-      <div>isi</div>
-      <div>isi</div>
-      <div>isi</div>
+      <About />
     </>
   );
 };

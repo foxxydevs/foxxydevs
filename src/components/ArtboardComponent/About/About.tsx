@@ -1,7 +1,10 @@
 import React from 'react';
+import ArboardDetail from '../ArtboardDetail/ArboardDetail';
 
 const About = () => {
-  return <div></div>;
+  return (
+    <ArboardDetail coverImage='/logo192.png' altText='avatar'></ArboardDetail>
+  );
 };
 
 export default About;
