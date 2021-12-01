@@ -1,5 +1,3 @@
-import './_Footer.scss';
-
 const Footer = () => {
   return (
     <div className='footer-wrapper'>
