@@ -1,8 +1,8 @@
 import React from 'react';
 
 type ArtboardProps = {
-  coverImage: string;
-  altText: string;
+  coverImage?: string;
+  altText?: string;
   imgStart?: boolean;
 };
 
@@ -12,14 +12,12 @@ const ArboardDetail: React.FC<ArtboardProps> = (props) => {
     <>
       <article>
         <div className='wrapper-row'>
-          {/* tinggal panggil === true jika tidak === false */}
-          {imgStart && (
-            <div className='wrapper-column'>
-              <div className='img-wrapper'>
-                <img alt={props.altText} src={props.coverImage} />
-              </div>
+          {/* img Start tinggal panggil === true jika tidak === false */}
+          <div className='wrapper-column'>
+            <div className='img-wrapper'>
+              <img alt={props.altText} src={props.coverImage} />
             </div>
-          )}
+          </div>
         </div>
       </article>
     </>

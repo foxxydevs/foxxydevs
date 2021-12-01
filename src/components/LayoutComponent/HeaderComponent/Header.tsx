@@ -1,11 +1,8 @@
-import './_Header.scss';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Header = () => {
-  return (
-    <div className='header-wrapper'>
-      <nav className='header'>awesome</nav>
-    </div>
-  );
+  return <nav className='header'>hii</nav>;
 };
 
 export default Header;

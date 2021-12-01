@@ -1,3 +1,5 @@
+@import './Variable.scss';
+
 @font-face {
   font-family: 'AllianceM';
   src: local('AllianceM'), local('AllianceM'),
@@ -10,9 +12,17 @@
     url('./Font/AllianceEB.ttf') format('truetype');
 }
 
+body {
+  background-color: $sweetwhite;
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: 'AllianceM';
 }

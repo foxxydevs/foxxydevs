@@ -5,7 +5,6 @@ import HomePages from '../pages/HomePages/HomePages';
 function App() {
   return (
     <Router>
-      {/* Switch is replaced by Routes */}
       <Switch>
         <Route exact path='/'>
           <HomePages />
