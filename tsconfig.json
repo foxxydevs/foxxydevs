@@ -26,7 +26,8 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "allowUnusedLabels": true,
-    "allowUnreachableCode": true
+    "allowUnreachableCode": true,
+    "baseUrl": "src"
   },
   "include": ["src"]
 }

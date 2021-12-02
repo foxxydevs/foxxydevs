@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import SideMenu from '../SideMenu/SideMenu';
 import { StyledBurger } from './Burger.styles';
 
 const Burger = () => {
@@ -11,6 +12,7 @@ const Burger = () => {
         <div />
         <div />
       </StyledBurger>
+      <SideMenu Open={Open} />
     </>
   );
 };

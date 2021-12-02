@@ -4,13 +4,13 @@ import Layout from './components/LayoutComponent/Layout';
 import App from './router/App';
 import { BrowserRouter } from 'react-router-dom';
 import { Global } from '@emotion/react';
-import { globalStyles } from './components/GlobalComponent/Global.styles';
+import { globalStyles } from './config/Global.styles';
 
 ReactDOM.render(
   <React.Fragment>
     <BrowserRouter>
-      <Global styles={globalStyles} />
       <Layout>
+        <Global styles={globalStyles} />
         <App />
       </Layout>
     </BrowserRouter>

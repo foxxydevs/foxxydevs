@@ -34,6 +34,6 @@ export const NavLogo = styled(Link)`
 `;
 
 export const LogoImage = styled.img`
-  width: 65px;
-  height: 65px;
+  width: 80px;
+  height: 80px;
 `;

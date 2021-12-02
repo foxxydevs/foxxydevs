@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { colours } from 'config/Colours.styles';
 
 type StyledBurgerProps = {
   open: boolean;
@@ -9,7 +10,7 @@ export const StyledBurger = styled.div<StyledBurgerProps>`
   opacity: 0;
   height: 2rem;
   position: fixed;
-  top: 45px;
+  top: 50px;
   right: 30px;
   padding-top: 3px;
   display: flex;
@@ -21,7 +22,8 @@ export const StyledBurger = styled.div<StyledBurgerProps>`
     width: 2rem;
     height: 0.25rem;
     border-radius: 10px;
-    background-color: ${({ open }) => (open ? '#F57C2F' : '#4F1824')};
+    background-color: ${({ open }) =>
+      open ? `${colours.orange}` : `${colours.brown}`};
     transform-origin: 1px;
     transition: all 0.3s linear;
 

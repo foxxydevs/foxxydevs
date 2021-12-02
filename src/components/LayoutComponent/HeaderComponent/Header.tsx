@@ -7,7 +7,7 @@ const Header = () => {
       <Nav>
         <NavbarContainer>
           <NavLogo to='/'>
-            <LogoImage src='/static/_Logo.png' alt='logo' />
+            <LogoImage src='/static/foxxydevs.png' alt='logo' />
           </NavLogo>
           <Burger />
         </NavbarContainer>
