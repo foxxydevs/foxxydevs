@@ -10,7 +10,7 @@ export const StyledBurger = styled.div<StyledBurgerProps>`
   opacity: 0;
   height: 2rem;
   position: fixed;
-  top: 50px;
+  top: 35px;
   right: 30px;
   padding-top: 3px;
   display: flex;

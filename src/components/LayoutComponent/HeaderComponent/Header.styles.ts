@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Nav = styled.nav`
   height: 90px;
-  margin: 20px 0px;
+  margin: 10px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,4 +36,5 @@ export const NavLogo = styled(Link)`
 export const LogoImage = styled.img`
   width: 80px;
   height: 80px;
+  position: fixed;
 `;

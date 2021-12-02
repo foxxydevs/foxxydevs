@@ -30,7 +30,7 @@ export const NavMenu = styled.ul<NavMenuProps>`
 
 export const NavItem = styled.li`
   height: 100px;
-  padding-left: 40px;
+  padding-left: 20px;
 
   @media screen and (max-width: 868px) {
     padding: 10px 15px;
