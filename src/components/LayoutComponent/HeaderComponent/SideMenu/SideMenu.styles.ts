@@ -29,7 +29,7 @@ export const NavMenu = styled.ul<NavMenuProps>`
 `;
 
 export const NavItem = styled.li`
-  height: 100px;
+  height: 80px;
   padding-left: 20px;
 
   @media screen and (max-width: 868px) {

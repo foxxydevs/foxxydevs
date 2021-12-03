@@ -66,7 +66,6 @@ export const WrapperColumn = styled.div`
 
 export const TextWrapper = styled.div`
   padding-top: 0;
-  padding-bottom: 60px;
   max-width: 100%;
   margin-left: -24px;
 
@@ -95,8 +94,8 @@ export const HeadingOne = styled.h1`
   }
 
   @media screen and (max-width: 428px) {
-    font-size: 31px;
     margin-left: 0px;
+    font-size: 31px;
   }
 
   @media screen and (max-width: 393px) {
@@ -104,7 +103,7 @@ export const HeadingOne = styled.h1`
   }
 
   @media screen and (max-width: 320px) {
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
   }
 `;
@@ -135,7 +134,8 @@ export const HeadingTwo = styled.h1`
   }
 
   @media screen and (max-width: 320px) {
-    font-size: 32px;
+    font-size: 30px;
+    margin-left: -5px;
     text-align: center;
   }
 `;
@@ -169,7 +169,7 @@ export const Img = styled.img`
   max-height: 530px;
 
   @media screen and (max-width: 1024px) {
-    margin: -50px;
+    margin: -55px;
     max-width: 110%;
   }
 
@@ -181,7 +181,7 @@ export const Img = styled.img`
     margin: -60px;
   }
 
-  @media screen and (max-width: 428px) {
+  @media screen and (max-width: 768px) {
     margin: 0px;
   }
 `;

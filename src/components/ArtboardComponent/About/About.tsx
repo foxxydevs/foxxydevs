@@ -6,7 +6,7 @@ const About = () => {
     <>
       <ArboardDetail
         haveBackground
-        redirect='https://github.com/ioofy'
+        redirect='https://github.com/foxxydevs'
         coverImage='/static/_learn.png'
         altText='hero_about'
         imgStarts={true}
