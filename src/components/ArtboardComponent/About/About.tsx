@@ -14,7 +14,7 @@ const About = () => {
         coverImage='/static/_about.png'
         altText='hero_about'
         imgStarts={true}
-        btnText='Mulai Berkontribusi sekarang'
+        btnText='Ayo Berkontribusi'
         start=''
         headingOne='Siapa kita?'
       />

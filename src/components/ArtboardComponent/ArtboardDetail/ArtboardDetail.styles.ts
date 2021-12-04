@@ -179,6 +179,10 @@ export const Subtitle = styled.p`
     text-align: justify;
     margin-left: 0px;
   }
+
+  @media screen and (max-width: 280px) {
+    text-align: center;
+  }
 `;
 
 export const ImgWrapper = styled.div<ImgWrapperProps>`
@@ -223,6 +227,7 @@ export const Button = styled.button<ButttonProps>`
   background: ${(props) => props.color};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '16px 45px' : '10px 20px')};
+  text-align: center;
   color: #fff;
   font-size: ${({ fontBig }) => (fontBig ? '17px' : '12px')};
   outline: none;
