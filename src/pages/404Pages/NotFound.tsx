@@ -4,7 +4,7 @@ const NotFound = () => {
   return (
     <>
       <Helmet>
-        <title>Not Found | RTSX Bahasa Indonesia</title>
+        <title>404 Not Found</title>
       </Helmet>
       <div>404 Not Found</div>
     </>

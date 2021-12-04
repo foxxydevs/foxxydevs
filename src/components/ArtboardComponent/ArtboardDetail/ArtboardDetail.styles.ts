@@ -26,15 +26,7 @@ type WrapperSectionProps = {
   padding: string;
 };
 
-type HeadingOneProps = {
-  isReverse?: boolean;
-};
-
-type HeadingTwoProps = {
-  isReverse?: boolean;
-};
-
-type TextWrapperProps = {
+type TyphographyProps = {
   isReverse?: boolean;
 };
 
@@ -83,7 +75,7 @@ export const WrapperColumn = styled.div`
   }
 `;
 
-export const TextWrapper = styled.div<TextWrapperProps>`
+export const TextWrapper = styled.div<TyphographyProps>`
   padding-top: 0;
   max-width: 100%;
   margin-left: ${({ isReverse }) => (isReverse ? '-10px' : '-24px')};
@@ -91,17 +83,18 @@ export const TextWrapper = styled.div<TextWrapperProps>`
   @media screen and (max-width: 1024px) {
     margin-left: ${({ isReverse }) => (isReverse ? '-30px' : '-15px')};
   }
+
   @media screen and (max-width: 980px) {
     padding-bottom: 65px;
     margin-left: ${({ isReverse }) => (isReverse ? '-50px' : '5px')};
   }
-  @media screen and (max-width: 768px) {
-    padding-bottom: 65px;
+
+  @media screen and (max-width: 834px) {
     margin-left: 0px;
   }
 `;
 
-export const HeadingOne = styled.h1<HeadingOneProps>`
+export const HeadingOne = styled.h1<TyphographyProps>`
   font-size: 45px;
   line-height: 1.1;
   margin-left: -5px;
@@ -111,12 +104,12 @@ export const HeadingOne = styled.h1<HeadingOneProps>`
   font-family: 'AllianceEB';
 
   @media screen and (max-width: 884px) {
+    width: ${({ isReverse }) => isReverse && '650px'};
     font-size: 40px;
   }
 
   @media screen and (max-width: 768px) {
     font-size: 42px;
-    width: 105%;
   }
 
   @media screen and (max-width: 428px) {
@@ -134,7 +127,7 @@ export const HeadingOne = styled.h1<HeadingOneProps>`
   }
 `;
 
-export const HeadingTwo = styled.h1<HeadingTwoProps>`
+export const HeadingTwo = styled.h1<TyphographyProps>`
   font-size: 45px;
   line-height: 1.1;
   margin-left: -5px;
@@ -143,6 +136,7 @@ export const HeadingTwo = styled.h1<HeadingTwoProps>`
   font-family: 'AllianceEB';
 
   @media screen and (max-width: 884px) {
+    width: ${({ isReverse }) => isReverse && '650px'};
     font-size: 40px;
   }
 
@@ -166,10 +160,9 @@ export const HeadingTwo = styled.h1<HeadingTwoProps>`
   }
 `;
 
-export const Subtitle = styled.p`
-  max-width: 550px;
+export const Subtitle = styled.p<TyphographyProps>`
+  max-width: 520px;
   font-size: 18px;
-  margin: 20px 0px;
   line-height: 25px;
   font-family: 'AllianceM';
   margin-left: -5px;
@@ -178,6 +171,10 @@ export const Subtitle = styled.p`
     font-size: 16px;
     text-align: justify;
     margin-left: 0px;
+  }
+
+  @media screen and (max-width: 884px) {
+    max-width: 650px;
   }
 
   @media screen and (max-width: 280px) {
@@ -224,16 +221,17 @@ export const Img = styled.img<ImgProps>`
 
 export const Button = styled.button<ButttonProps>`
   border-radius: 4px;
+  margin-top: 20px;
   background: ${(props) => props.color};
   white-space: nowrap;
-  padding: ${({ big }) => (big ? '16px 45px' : '10px 20px')};
+  padding: ${({ big }) => (big ? '17px 45px' : '10px 20px')};
   text-align: center;
   color: #fff;
   font-size: ${({ fontBig }) => (fontBig ? '17px' : '12px')};
   outline: none;
   font-family: 'AllianceM';
   font-weight: bold;
-  margin-left: ${({ left }) => (left ? '-70px' : '-3px')};
+  margin-left: ${({ left }) => (left ? '-70px' : '-5px')};
   border: none;
   cursor: pointer;
 
