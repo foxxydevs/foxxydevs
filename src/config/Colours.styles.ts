@@ -6,7 +6,7 @@ export const colours = {
   carchoal: '#F5EBDF',
   blue: '#4b9ed9',
   pink: '#F775B4',
-  orange: '#F47E5C',
+  orange: '#F06F49',
   brown: '#4f1824',
   wheat: '#f5deb3',
   white: '#FEF5ED',

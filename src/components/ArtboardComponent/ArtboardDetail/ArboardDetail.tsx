@@ -15,6 +15,8 @@ import {
 
 interface ArtboardProps {
   coverImage: string;
+  btnHover: string;
+  btnColor: string;
   altText: string;
   imgStarts: boolean;
   redirect: string;
@@ -22,28 +24,33 @@ interface ArtboardProps {
   headingTwo?: string;
   btnText: string;
   description?: string;
-  primary: boolean;
   start: string;
   isReverse?: boolean;
   haveBackground?: boolean;
+  padding: string;
 }
 
 const ArboardDetail: React.FC<ArtboardProps> = (props) => {
-  const { imgStarts, primary, isReverse, haveBackground } = props;
+  const { imgStarts, isReverse, haveBackground, padding } = props;
   return (
     <>
-      <WrapperSection isHaveBackground={haveBackground}>
+      <WrapperSection isHaveBackground={haveBackground} padding={padding}>
         <Container>
           <WrapperRow imgStart={imgStarts}>
             {isReverse ? (
               <>
                 <WrapperColumn>
-                  <TextWrapper>
-                    <HeadingOne>{props.headingOne}</HeadingOne>
-                    <HeadingTwo>{props.headingTwo}</HeadingTwo>
+                  <TextWrapper isReverse>
+                    <HeadingOne isReverse>{props.headingOne}</HeadingOne>
+                    <HeadingTwo isReverse>{props.headingTwo}</HeadingTwo>
                     <Subtitle>{props.description}</Subtitle>
                     <a target='_blank' href={props.redirect} rel='noreferrer'>
-                      <Button big fontBig primary={primary}>
+                      <Button
+                        big
+                        fontBig
+                        color={props.btnColor}
+                        hover={props.btnHover}
+                      >
                         {props.btnText}
                       </Button>
                     </a>
@@ -51,7 +58,7 @@ const ArboardDetail: React.FC<ArtboardProps> = (props) => {
                 </WrapperColumn>
                 <WrapperColumn>
                   <ImgWrapper start=''>
-                    <Img src={props.coverImage} alt={props.altText} />
+                    <Img src={props.coverImage} alt={props.altText} isReverse />
                   </ImgWrapper>
                 </WrapperColumn>
               </>
@@ -68,7 +75,12 @@ const ArboardDetail: React.FC<ArtboardProps> = (props) => {
                     <HeadingTwo>{props.headingTwo}</HeadingTwo>
                     <Subtitle>{props.description}</Subtitle>
                     <a target='_blank' href={props.redirect} rel='noreferrer'>
-                      <Button big fontBig primary={primary}>
+                      <Button
+                        big
+                        fontBig
+                        color={props.btnColor}
+                        hover={props.btnHover}
+                      >
                         {props.btnText}
                       </Button>
                     </a>

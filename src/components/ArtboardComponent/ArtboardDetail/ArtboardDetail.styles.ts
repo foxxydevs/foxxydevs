@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { colours } from 'config/Colours.styles';
 
 type WrapperRowProps = {
   imgStart: boolean;
@@ -8,8 +9,13 @@ type ImgWrapperProps = {
   start: string;
 };
 
+type ImgProps = {
+  isReverse?: boolean;
+};
+
 type ButttonProps = {
-  primary: boolean;
+  color?: string;
+  hover?: string;
   fontBig: boolean;
   big: boolean;
   left?: boolean;
@@ -17,12 +23,25 @@ type ButttonProps = {
 
 type WrapperSectionProps = {
   isHaveBackground?: boolean;
+  padding: string;
+};
+
+type HeadingOneProps = {
+  isReverse?: boolean;
+};
+
+type HeadingTwoProps = {
+  isReverse?: boolean;
+};
+
+type TextWrapperProps = {
+  isReverse?: boolean;
 };
 
 export const WrapperSection = styled.div<WrapperSectionProps>`
-  padding: 100px 0;
+  padding: ${(props) => props.padding};
   background-color: ${({ isHaveBackground }) =>
-    isHaveBackground ? '#F5EBDF' : 'transparent'};
+    isHaveBackground ? `${colours.carchoal}` : 'transparent'};
 `;
 
 export const Container = styled.div`
@@ -64,22 +83,29 @@ export const WrapperColumn = styled.div`
   }
 `;
 
-export const TextWrapper = styled.div`
+export const TextWrapper = styled.div<TextWrapperProps>`
   padding-top: 0;
   max-width: 100%;
-  margin-left: -24px;
+  margin-left: ${({ isReverse }) => (isReverse ? '-10px' : '-24px')};
 
+  @media screen and (max-width: 1024px) {
+    margin-left: ${({ isReverse }) => (isReverse ? '-30px' : '-15px')};
+  }
   @media screen and (max-width: 980px) {
+    padding-bottom: 65px;
+    margin-left: ${({ isReverse }) => (isReverse ? '-50px' : '5px')};
+  }
+  @media screen and (max-width: 768px) {
     padding-bottom: 65px;
     margin-left: 0px;
   }
 `;
 
-export const HeadingOne = styled.h1`
+export const HeadingOne = styled.h1<HeadingOneProps>`
   font-size: 45px;
   line-height: 1.1;
   margin-left: -5px;
-  width: 650px;
+  width: ${({ isReverse }) => (isReverse ? '520px' : '650px')};
   color: #4f1824;
   margin-bottom: 10px;
   font-family: 'AllianceEB';
@@ -88,7 +114,7 @@ export const HeadingOne = styled.h1`
     font-size: 40px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     font-size: 42px;
     width: 105%;
   }
@@ -108,11 +134,11 @@ export const HeadingOne = styled.h1`
   }
 `;
 
-export const HeadingTwo = styled.h1`
+export const HeadingTwo = styled.h1<HeadingTwoProps>`
   font-size: 45px;
   line-height: 1.1;
   margin-left: -5px;
-  width: 650px;
+  width: ${({ isReverse }) => (isReverse ? '520px' : '650px')};
   color: #4f1824;
   font-family: 'AllianceEB';
 
@@ -120,7 +146,7 @@ export const HeadingTwo = styled.h1`
     font-size: 40px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     font-size: 42px;
     width: 105%;
   }
@@ -141,14 +167,14 @@ export const HeadingTwo = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  max-width: 550px;
   font-size: 18px;
-  margin-bottom: 30px;
+  margin: 20px 0px;
   line-height: 25px;
   font-family: 'AllianceM';
   margin-left: -5px;
 
-  @media screen and (max-width: 428px) {
+  @media screen and (max-width: 1024px) {
     font-size: 16px;
     text-align: justify;
     margin-left: 0px;
@@ -162,33 +188,39 @@ export const ImgWrapper = styled.div<ImgWrapperProps>`
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 `;
 
-export const Img = styled.img`
-  margin-right: -100px;
+export const Img = styled.img<ImgProps>`
+  margin-right: ${({ isReverse }) => (isReverse ? '-30px' : '-100px')};
   border: 0;
   max-width: 130%;
   max-height: 530px;
 
   @media screen and (max-width: 1024px) {
-    margin: -55px;
+    margin-right: ${({ isReverse }) => (isReverse ? '50px' : '-50px')};
     max-width: 110%;
   }
 
   @media screen and (max-width: 980px) {
-    margin: 0px;
+    margin-right: ${({ isReverse }) => (isReverse ? '30px' : '-30px')};
   }
 
   @media screen and (max-width: 884px) {
-    margin: -60px;
+    margin-right: ${({ isReverse }) => (isReverse ? '10px' : '0px')};
   }
 
   @media screen and (max-width: 768px) {
-    margin: 0px;
+    margin-right: 0px;
+  }
+
+  /* only 320px media screen */
+  @media screen and (max-width: 320px) {
+    max-width: 130%;
+    margin-right: -30px;
   }
 `;
 
 export const Button = styled.button<ButttonProps>`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? '#4b9ed9' : '#0467FB')};
+  background: ${(props) => props.color};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '16px 45px' : '10px 20px')};
   color: #fff;
@@ -203,7 +235,7 @@ export const Button = styled.button<ButttonProps>`
   &:hover {
     transition: all 0.3s ease-out;
     background: #fff;
-    background-color: ${({ primary }) => (primary ? '#FF7D2A' : '#4B59F7')};
+    background-color: ${(props) => props.hover};
   }
   @media screen and (max-width: 868px) {
     width: 100%;
