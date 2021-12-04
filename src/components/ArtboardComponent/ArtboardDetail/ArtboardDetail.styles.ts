@@ -78,7 +78,7 @@ export const WrapperColumn = styled.div`
 export const TextWrapper = styled.div<TyphographyProps>`
   padding-top: 0;
   max-width: 100%;
-  margin-left: ${({ isReverse }) => (isReverse ? '-10px' : '-24px')};
+  margin-left: ${({ isReverse }) => (isReverse ? '50px' : '-24px')};
 
   @media screen and (max-width: 1024px) {
     margin-left: ${({ isReverse }) => (isReverse ? '-30px' : '-15px')};
@@ -97,7 +97,7 @@ export const TextWrapper = styled.div<TyphographyProps>`
 export const HeadingOne = styled.h1<TyphographyProps>`
   font-size: 45px;
   line-height: 1.1;
-  margin-left: -5px;
+  margin-left: -6px;
   width: ${({ isReverse }) => (isReverse ? '520px' : '650px')};
   color: #4f1824;
   margin-bottom: 10px;
@@ -105,10 +105,12 @@ export const HeadingOne = styled.h1<TyphographyProps>`
 
   @media screen and (max-width: 884px) {
     width: ${({ isReverse }) => isReverse && '650px'};
+    margin-left: -1px;
     font-size: 40px;
   }
 
   @media screen and (max-width: 768px) {
+    width: 105%;
     font-size: 42px;
   }
 
@@ -130,13 +132,14 @@ export const HeadingOne = styled.h1<TyphographyProps>`
 export const HeadingTwo = styled.h1<TyphographyProps>`
   font-size: 45px;
   line-height: 1.1;
-  margin-left: -5px;
+  margin-left: -6px;
   width: ${({ isReverse }) => (isReverse ? '520px' : '650px')};
   color: #4f1824;
   font-family: 'AllianceEB';
 
   @media screen and (max-width: 884px) {
     width: ${({ isReverse }) => isReverse && '650px'};
+    margin-left: -1px;
     font-size: 40px;
   }
 
@@ -168,12 +171,18 @@ export const Subtitle = styled.p<TyphographyProps>`
   margin-left: -5px;
 
   @media screen and (max-width: 1024px) {
-    font-size: 16px;
+    font-size: 20px;
     text-align: justify;
-    margin-left: 0px;
+    margin-left: -5px;
   }
 
   @media screen and (max-width: 884px) {
+    margin: 0px;
+    max-width: 650px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 17px;
     max-width: 650px;
   }
 
@@ -221,7 +230,7 @@ export const Img = styled.img<ImgProps>`
 
 export const Button = styled.button<ButttonProps>`
   border-radius: 4px;
-  margin-top: 20px;
+  margin-top: 25px;
   background: ${(props) => props.color};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '17px 45px' : '10px 20px')};
