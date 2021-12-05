@@ -1,5 +1,6 @@
-import About from 'components/ArtboardComponent/About/About';
-import Welcome from 'components/ArtboardComponent/Welcome/Welcome';
+import About from 'components/PagesComponents/About/About';
+import Contact from 'components/PagesComponents/Contact/Contact';
+import Welcome from 'components/PagesComponents/Welcome/Welcome';
 import { Helmet } from 'react-helmet';
 
 const HomePages = () => {
@@ -10,6 +11,7 @@ const HomePages = () => {
       </Helmet>
       <Welcome />
       <About />
+      <Contact />
     </>
   );
 };

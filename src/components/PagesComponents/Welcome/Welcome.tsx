@@ -1,5 +1,5 @@
 import React from 'react';
-import ArboardDetail from '../ArtboardDetail/ArboardDetail';
+import ArboardDetail from 'components/ArtboardComponent/ArtboardDetail/ArboardDetail';
 const Welcome = () => {
   return (
     <>
