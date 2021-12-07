@@ -224,3 +224,17 @@ export const Button = styled.button<ButttonProps>`
     font-size: 14px;
   }
 `;
+
+export const Message = styled.div`
+  padding: 12px;
+  background: #519259;
+  margin-left: -4px;
+  font-family: 'AllianceM';
+  color: ${colours.sweetwhite};
+  margin-bottom: 10px;
+  border-radius: 2px;
+
+  @media screen and (max-width: 884px) {
+    margin-left: 0px;
+  }
+`;

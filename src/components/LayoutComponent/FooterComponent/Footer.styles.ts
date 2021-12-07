@@ -111,7 +111,7 @@ export const FooterImg = styled.img`
 
 export const FooterDescription = styled.p`
   max-width: 250px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'AllianceM';
 
   @media screen and (max-width: 428px) {
@@ -138,7 +138,7 @@ export const Opener = styled.a`
 export const FooterSubtitle = styled.h3`
   font-family: 'AllianceM';
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
 
   @media screen and (max-width: 428px) {
     font-size: 17px;
@@ -163,7 +163,12 @@ export const FooterItem = styled.li`
 export const FooterLinks = styled(Link)`
   text-decoration: none;
   color: ${colours.black};
-  font-size: 19px;
+  font-size: 16px;
+
+  svg {
+    padding: 2px;
+    margin-left: 5px;
+  }
 
   @media screen and (max-width: 428px) {
     font-size: 17px;
@@ -204,7 +209,7 @@ export const FooterCopy = styled.p`
   font-family: 'AllianceM';
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
 
   @media screen and (max-width: 428px) {
     font-size: 17px;

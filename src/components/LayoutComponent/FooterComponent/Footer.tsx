@@ -79,16 +79,16 @@ const Footers = () => {
                 <FooterSubtitle>Foxxydevs</FooterSubtitle>
                 <FooterMenu>
                   <FooterItem>
-                    <FooterLinks to='/#about'>Tentang</FooterLinks>
-                    <RiShareBoxLine
-                      style={{ padding: '1px', marginLeft: '5px' }}
-                    />
+                    <FooterLinks to='/#about'>
+                      Tentang
+                      <RiShareBoxLine />
+                    </FooterLinks>
                   </FooterItem>
                   <FooterItem>
-                    <FooterLinks to='/#about'>Kontak</FooterLinks>
-                    <RiShareBoxLine
-                      style={{ padding: '1px', marginLeft: '5px' }}
-                    />
+                    <FooterLinks to='/#about'>
+                      Kontak
+                      <RiShareBoxLine />
+                    </FooterLinks>
                   </FooterItem>
                   <FooterItem>
                     <FooterLinks to='/#about'>Tech Stack</FooterLinks>
@@ -100,19 +100,22 @@ const Footers = () => {
                 <FooterSubtitle>Support</FooterSubtitle>
                 <FooterMenu>
                   <FooterItem>
-                    <FooterLinks to='/#about'>Kontributor</FooterLinks>
-                    <RiShareBoxLine
-                      style={{ padding: '1px', marginLeft: '5px' }}
-                    />
+                    <FooterLinks to='/#about'>
+                      Kontributor
+                      <RiShareBoxLine />
+                    </FooterLinks>
                   </FooterItem>
                   <FooterItem>
-                    <FooterLinks to='/#about'>Komunitas</FooterLinks>
+                    <FooterLinks to='/#about'>
+                      Komunitas
+                      <RiShareBoxLine />
+                    </FooterLinks>
                   </FooterItem>
                   <FooterItem>
-                    <FooterLinks to='/#about'>Blog</FooterLinks>
-                    <RiShareBoxLine
-                      style={{ padding: '1px', marginLeft: '5px' }}
-                    />
+                    <FooterLinks to='/#about'>
+                      Blog
+                      <RiShareBoxLine />
+                    </FooterLinks>
                   </FooterItem>
                 </FooterMenu>
               </section>
@@ -121,16 +124,16 @@ const Footers = () => {
                 <FooterSubtitle>Bantuan</FooterSubtitle>
                 <FooterMenu>
                   <FooterItem>
-                    <FooterLinks to='/#about'>Mulai Belajar</FooterLinks>
-                    <RiShareBoxLine
-                      style={{ padding: '1px', marginLeft: '5px' }}
-                    />
+                    <FooterLinks to='/#about'>
+                      Mulai Belajar
+                      <RiShareBoxLine />
+                    </FooterLinks>
                   </FooterItem>
                   <FooterItem>
-                    <FooterLinks to='/#about'>Berkontribusi</FooterLinks>
-                    <RiShareBoxLine
-                      style={{ padding: '1px', marginLeft: '5px' }}
-                    />
+                    <FooterLinks to='/#about'>
+                      Berkontribusi
+                      <RiShareBoxLine />
+                    </FooterLinks>
                   </FooterItem>
                   <FooterItem>
                     <FooterLinks to='/#about'>Code of conduct</FooterLinks>
