@@ -21,7 +21,7 @@ export const WrapperColumn = styled.div`
   max-width: 50%;
   flex-basis: 50%;
 
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 884px) {
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -215,7 +215,7 @@ export const Button = styled.button<ButttonProps>`
     background: #fff;
     background-color: ${(props) => props.hover};
   }
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 884px) {
     width: 100%;
     margin-left: 0px;
   }

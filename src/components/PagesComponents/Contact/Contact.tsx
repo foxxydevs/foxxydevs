@@ -42,7 +42,7 @@ const Contact: React.FC<ContactProps> = () => {
                 color={`${colours.pink}`}
                 hover={`${colours.orange}`}
               >
-                Kirim Pesan
+                Kirim Pesan🚀
               </Button>
             </Form>
           </TextWrapper>

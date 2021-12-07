@@ -7,7 +7,7 @@ export const WrapperColumn = styled.div`
   flex: 1;
   max-width: 50%;
 
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 884px) {
     max-width: 100%;
     width: 100%;
     flex: none;

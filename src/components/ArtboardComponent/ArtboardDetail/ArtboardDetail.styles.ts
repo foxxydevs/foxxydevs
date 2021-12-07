@@ -67,7 +67,7 @@ export const WrapperColumn = styled.div`
   max-width: 50%;
   flex-basis: 50%;
 
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 884px) {
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -89,7 +89,7 @@ export const TextWrapper = styled.div<TyphographyProps>`
     margin-left: ${({ isReverse }) => (isReverse ? '-50px' : '5px')};
   }
 
-  @media screen and (max-width: 834px) {
+  @media screen and (max-width: 884px) {
     margin-left: 0px;
   }
 `;
@@ -249,7 +249,7 @@ export const Button = styled.button<ButttonProps>`
     background: #fff;
     background-color: ${(props) => props.hover};
   }
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 884px) {
     width: 100%;
     margin-left: 0px;
   }

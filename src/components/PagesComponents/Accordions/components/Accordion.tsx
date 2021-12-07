@@ -43,6 +43,7 @@ const Button = styled.button`
   width: 2rem;
   height: 2rem;
   display: flex;
+  outline: none;
   font-size: 25px;
   color: ${colours.pink};
   align-items: center;

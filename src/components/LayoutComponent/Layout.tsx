@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './FooterComponent/Footer';
+import Footers from './FooterComponent/Footer';
 import Header from './HeaderComponent/Header';
 
 type LayoutProps = {
@@ -11,7 +11,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
     <>
       <Header />
       <div className='wrapper-all css-y87eh5'>{props.children}</div>
-      <Footer />
+      <Footers />
     </>
   );
 };

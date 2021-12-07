@@ -10,4 +10,5 @@ export const colours = {
   brown: '#4f1824',
   wheat: '#f5deb3',
   white: '#FEF5ED',
+  black: '#000',
 };
