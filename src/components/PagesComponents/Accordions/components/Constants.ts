@@ -2,22 +2,22 @@ const question = [
   {
     id: 1,
     title: 'Web ini tentang apa?',
-    info: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.',
+    info: 'Web ini adalah web opensource yang didirikan untuk membantu pemula dalam pembelajaran dan berisi konten mengenai ui framework seperti react ataupun konten lainnya.',
   },
   {
     id: 2,
     title: 'Gimana caranya berkontribusi?',
-    info: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.',
+    info: 'Caranya gampang, kamu cukup kunjungi organization page kami digithub dan pilih projek mana yang ingin kamu kontribusi lalu, fork projeknya dan ketika sudah di push lakukan pull request.',
   },
   {
     id: 3,
     title: 'Kenapa web ini dibuat?',
-    info: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.',
+    info: 'Seperti yang sudah dijabarkan, web ini dibuat untuk membantu pemula dalam hal pembelajaran jikalau kamu ingin berkontribusi silahkan. Kami sangat terbuka lebar dalam opensource',
   },
   {
     id: 4,
     title: 'Gimana cara kerja web ini?',
-    info: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.',
+    info: 'Web ini hanya landing page saja supaya kamu bisa tahu jika kamu penasaran dengan foxxydevs, dan di web ini berisi konten mengenai Q&A ataupun pengenalan foxxydevs kepada kalian. Ayo cepat berkontribusi🤗',
   },
 ];
 

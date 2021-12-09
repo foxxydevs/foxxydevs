@@ -232,7 +232,7 @@ export const Message = styled.div`
   font-family: 'AllianceM';
   color: ${colours.sweetwhite};
   margin-bottom: 10px;
-  border-radius: 2px;
+  border-radius: 20px 20px 20px 1px;
 
   @media screen and (max-width: 884px) {
     margin-left: 0px;
