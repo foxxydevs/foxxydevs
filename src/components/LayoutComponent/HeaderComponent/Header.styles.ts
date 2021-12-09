@@ -1,9 +1,15 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
+import { colours } from 'config/Colours.styles';
 
-export const Nav = styled.nav`
+type NavProps = {
+  active?: boolean;
+};
+
+export const Nav = styled.nav<NavProps>`
   height: 90px;
   margin: 10px 0px;
+  background: ${({ active }) => (active ? `${colours.wheat}` : 'transparent')};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,5 +42,4 @@ export const NavLogo = styled(Link)`
 export const LogoImage = styled.img`
   width: 80px;
   height: 80px;
-  position: fixed;
 `;
