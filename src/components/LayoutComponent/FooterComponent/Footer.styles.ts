@@ -234,7 +234,7 @@ export const FooterRightsLink = styled(Link)`
 
   img {
     width: 60px;
-    height: 25px;
+    height: 23px;
   }
 
   @media screen and (max-width: 428px) {

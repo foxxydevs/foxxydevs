@@ -55,7 +55,7 @@ const ArboardDetail: React.FC<ArtboardProps> = (props) => {
     tl.from(imageOneChild, 1.5, { y: 500, ease: Power3.easeOut });
 
     //Content animation
-    tl.staggerFrom(headLineFirst, 1, {
+    tl.staggerFrom(headLineFirst, 1.5, {
       y: 5,
       height: '5px',
       ease: Power3.easeOut,
