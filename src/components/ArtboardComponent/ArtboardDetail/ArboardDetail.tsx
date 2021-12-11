@@ -13,7 +13,6 @@ import {
   WrapperRow,
   WrapperSection,
   InnerText,
-  InnerButton,
 } from './ArtboardDetail.styles';
 
 interface ArtboardProps {
@@ -47,7 +46,6 @@ const ArboardDetail: React.FC<ArtboardProps> = (props) => {
 
     //Content variable
     const headLineFirst = content.firstElementChild;
-    const ButtonElement = content.lastElementChild;
 
     TweenMax.to(app, 0, {
       css: { visibility: 'visible' },
@@ -61,13 +59,6 @@ const ArboardDetail: React.FC<ArtboardProps> = (props) => {
       y: 5,
       height: '5px',
       ease: Power3.easeOut,
-      delay: 0.2,
-    });
-
-    tl.staggerFrom(ButtonElement, 1, {
-      x: 1,
-      width: '1px',
-      ease: Power3.easeInOut,
       delay: 0.2,
     });
   });
@@ -120,8 +111,6 @@ const ArboardDetail: React.FC<ArtboardProps> = (props) => {
                       <HeadingOne>{props.headingOne}</HeadingOne>
                       <HeadingTwo>{props.headingTwo}</HeadingTwo>
                       <Subtitle>{props.description}</Subtitle>
-                    </InnerText>
-                    <InnerButton>
                       <a target='_blank' href={props.redirect} rel='noreferrer'>
                         <Button
                           big
@@ -132,7 +121,7 @@ const ArboardDetail: React.FC<ArtboardProps> = (props) => {
                           {props.btnText}
                         </Button>
                       </a>
-                    </InnerButton>
+                    </InnerText>
                   </TextWrapper>
                 </WrapperColumn>
               </>

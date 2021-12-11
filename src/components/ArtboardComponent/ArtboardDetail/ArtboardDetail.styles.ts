@@ -98,7 +98,7 @@ export const TextWrapper = styled.div<TyphographyProps>`
 
 export const InnerText = styled.div`
   margin: 0;
-  height: 120px;
+  height: 200px;
   overflow: hidden;
 `;
 
@@ -236,14 +236,7 @@ export const Img = styled.img<ImgProps>`
   }
 `;
 
-export const InnerButton = styled.div`
-  margin: 0;
-  width: 500px;
-  overflow: hidden;
-`;
-
 export const Button = styled.button<ButttonProps>`
-  overflow: hidden;
   border-radius: 4px;
   margin-top: 25px;
   background: ${(props) => props.color};
@@ -267,10 +260,6 @@ export const Button = styled.button<ButttonProps>`
   @media screen and (max-width: 884px) {
     width: 100%;
     margin-left: 0px;
-  }
-
-  @media screen and (max-width: 428px) {
-    margin-top: ${({ isReverse }) => (isReverse ? '25px' : '-50px')};
   }
 
   @media screen and (max-width: 280px) {
