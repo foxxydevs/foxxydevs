@@ -24,6 +24,7 @@ type ButttonProps = {
   fontBig: boolean;
   big: boolean;
   left?: boolean;
+  isReverse?: boolean;
 };
 
 type TyphographyProps = {
@@ -32,6 +33,7 @@ type TyphographyProps = {
 
 export const WrapperSection = styled.div<WrapperSectionProps>`
   padding: ${(props) => props.padding};
+  visibility: hidden;
   background-color: ${({ isHaveBackground }) =>
     isHaveBackground ? `${colours.carchoal}` : 'transparent'};
 `;
@@ -77,7 +79,7 @@ export const WrapperColumn = styled.div`
 
 export const TextWrapper = styled.div<TyphographyProps>`
   padding-top: 0;
-  max-width: 100%;
+  width: 115%;
   margin-left: ${({ isReverse }) => (isReverse ? '50px' : '-24px')};
 
   @media screen and (max-width: 1024px) {
@@ -94,10 +96,16 @@ export const TextWrapper = styled.div<TyphographyProps>`
   }
 `;
 
+export const InnerText = styled.div`
+  margin: 0;
+  height: 120px;
+  overflow: hidden;
+`;
+
 export const HeadingOne = styled.h1<TyphographyProps>`
   font-size: 45px;
   line-height: 1.1;
-  margin-left: -6px;
+  margin-left: 1px;
   width: ${({ isReverse }) => (isReverse ? '520px' : '650px')};
   color: #4f1824;
   margin-bottom: 10px;
@@ -132,7 +140,7 @@ export const HeadingOne = styled.h1<TyphographyProps>`
 export const HeadingTwo = styled.h1<TyphographyProps>`
   font-size: 45px;
   line-height: 1.1;
-  margin-left: -6px;
+  margin-left: 1px;
   width: ${({ isReverse }) => (isReverse ? '520px' : '650px')};
   color: #4f1824;
   font-family: 'AllianceEB';
@@ -168,7 +176,7 @@ export const Subtitle = styled.p<TyphographyProps>`
   font-size: 18px;
   line-height: 25px;
   font-family: 'AllianceM';
-  margin-left: -5px;
+  margin-left: 1px;
 
   @media screen and (max-width: 1024px) {
     font-size: 19px;
@@ -228,7 +236,14 @@ export const Img = styled.img<ImgProps>`
   }
 `;
 
+export const InnerButton = styled.div`
+  margin: 0;
+  width: 500px;
+  overflow: hidden;
+`;
+
 export const Button = styled.button<ButttonProps>`
+  overflow: hidden;
   border-radius: 4px;
   margin-top: 25px;
   background: ${(props) => props.color};
@@ -240,7 +255,7 @@ export const Button = styled.button<ButttonProps>`
   outline: none;
   font-family: 'AllianceM';
   font-weight: bold;
-  margin-left: ${({ left }) => (left ? '-70px' : '-5px')};
+  margin-left: ${({ left }) => (left ? '-70px' : '1px')};
   border: none;
   cursor: pointer;
 
@@ -252,6 +267,10 @@ export const Button = styled.button<ButttonProps>`
   @media screen and (max-width: 884px) {
     width: 100%;
     margin-left: 0px;
+  }
+
+  @media screen and (max-width: 428px) {
+    margin-top: ${({ isReverse }) => (isReverse ? '25px' : '-50px')};
   }
 
   @media screen and (max-width: 280px) {
