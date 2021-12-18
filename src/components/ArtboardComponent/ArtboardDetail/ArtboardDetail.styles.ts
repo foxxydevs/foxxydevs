@@ -23,7 +23,6 @@ type ButttonProps = {
   hover?: string;
   fontBig: boolean;
   big: boolean;
-  left?: boolean;
   isReverse?: boolean;
 };
 
@@ -105,7 +104,7 @@ export const InnerText = styled.div`
 export const HeadingOne = styled.h1<TyphographyProps>`
   font-size: 45px;
   line-height: 1.1;
-  margin-left: 1px;
+  margin-left: ${({ isReverse }) => (isReverse ? '-5px' : '1px')};
   width: ${({ isReverse }) => (isReverse ? '520px' : '650px')};
   color: #4f1824;
   margin-bottom: 10px;
@@ -140,7 +139,7 @@ export const HeadingOne = styled.h1<TyphographyProps>`
 export const HeadingTwo = styled.h1<TyphographyProps>`
   font-size: 45px;
   line-height: 1.1;
-  margin-left: 1px;
+  margin-left: ${({ isReverse }) => (isReverse ? '-10px' : '1px')};
   width: ${({ isReverse }) => (isReverse ? '520px' : '650px')};
   color: #4f1824;
   font-family: 'AllianceEB';
@@ -172,11 +171,11 @@ export const HeadingTwo = styled.h1<TyphographyProps>`
 `;
 
 export const Subtitle = styled.p<TyphographyProps>`
-  max-width: 520px;
+  max-width: 490px;
   font-size: 18px;
   line-height: 25px;
   font-family: 'AllianceM';
-  margin-left: 1px;
+  margin-left: -3px;
 
   @media screen and (max-width: 1024px) {
     font-size: 19px;
@@ -248,7 +247,7 @@ export const Button = styled.button<ButttonProps>`
   outline: none;
   font-family: 'AllianceM';
   font-weight: bold;
-  margin-left: ${({ left }) => (left ? '-70px' : '1px')};
+  margin-left: ${({ isReverse }) => (isReverse ? '-3px' : '1px')};
   border: none;
   cursor: pointer;
 

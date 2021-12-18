@@ -2,7 +2,7 @@
 
 export const colours = {
   sweetwhite: '#FFF9F4',
-  sweetbrown: '#C09783',
+  sweetbrown: '#AB9F99',
   carchoal: '#F5EBDF',
   blue: '#4b9ed9',
   pink: '#FF5DA2',

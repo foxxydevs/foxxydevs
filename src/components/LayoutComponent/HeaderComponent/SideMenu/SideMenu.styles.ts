@@ -31,6 +31,7 @@ export const NavMenu = styled.ul<NavMenuProps>`
 export const NavItem = styled.li`
   height: 80px;
   padding-left: 20px;
+  vertical-align: middle;
 
   @media screen and (max-width: 868px) {
     padding: 10px 15px;
@@ -41,6 +42,7 @@ export const NavItem = styled.li`
 export const NavLinks = styled(Link)`
   color: ${colours.brown};
   display: flex;
+  position: relative;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
@@ -48,6 +50,23 @@ export const NavLinks = styled(Link)`
   font-weight: bold;
   cursor: pointer;
   font-family: 'AllianceM';
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    transition: 0.2s ease-in-out;
+    right: 0;
+    left: auto;
+    background-color: ${colours.orange};
+    bottom: 15px;
+  }
+
+  &:hover::before {
+    width: 100%;
+    left: 0;
+  }
 
   @media screen and (max-width: 868px) {
     margin: 50px 0px;
