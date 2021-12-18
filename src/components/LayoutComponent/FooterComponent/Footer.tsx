@@ -22,10 +22,12 @@ import {
 import {
   RiGithubFill,
   RiStackOverflowLine,
-  RiDiscordFill,
   RiShareBoxLine,
   RiTwitterFill,
+  RiSlackFill,
 } from 'react-icons/ri';
+
+import ReactTooltip from 'react-tooltip';
 
 const Footers = () => {
   return (
@@ -46,7 +48,11 @@ const Footers = () => {
                     aria-label='facebook'
                     rel='noopener noreferrer'
                   >
-                    <RiGithubFill style={{ color: '#000' }} />
+                    <RiGithubFill
+                      data-tip='Github'
+                      data-place='bottom'
+                      style={{ color: '#000' }}
+                    />
                   </Opener>
                   <Opener
                     href={'//www.facebook.com'}
@@ -54,7 +60,11 @@ const Footers = () => {
                     aria-label='facebook'
                     rel='noopener noreferrer'
                   >
-                    <RiStackOverflowLine style={{ color: '#FFA500' }} />
+                    <RiStackOverflowLine
+                      data-tip='Stack Overflow'
+                      data-place='bottom'
+                      style={{ color: '#FFA500' }}
+                    />
                   </Opener>
                   <Opener
                     href={'//www.facebook.com'}
@@ -62,7 +72,11 @@ const Footers = () => {
                     aria-label='facebook'
                     rel='noopener noreferrer'
                   >
-                    <RiTwitterFill style={{ color: '#3DB2FF' }} />
+                    <RiTwitterFill
+                      data-tip='Twitter'
+                      data-place='bottom'
+                      style={{ color: '#3DB2FF' }}
+                    />
                   </Opener>
                   <Opener
                     href={'//www.facebook.com'}
@@ -70,8 +84,14 @@ const Footers = () => {
                     aria-label='facebook'
                     rel='noopener noreferrer'
                   >
-                    <RiDiscordFill style={{ color: '#4137bd' }} />
+                    <RiSlackFill
+                      data-tip='Slack'
+                      data-place='bottom'
+                      className='slack'
+                      style={{ color: '#e6186d' }}
+                    />
                   </Opener>
+                  <ReactTooltip />
                 </Social>
               </section>
 
