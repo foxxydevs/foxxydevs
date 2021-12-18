@@ -127,6 +127,10 @@ export const FooterDescription = styled.p`
 export const Social = styled.div`
   font-size: 1.5rem;
   margin-top: 15px;
+
+  .tooltips {
+    font-family: 'AllianceM' !important;
+  }
 `;
 
 export const Opener = styled.a`

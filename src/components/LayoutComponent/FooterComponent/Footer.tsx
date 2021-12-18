@@ -91,7 +91,7 @@ const Footers = () => {
                       style={{ color: '#e6186d' }}
                     />
                   </Opener>
-                  <ReactTooltip />
+                  <ReactTooltip className='tooltips' />
                 </Social>
               </section>
 
