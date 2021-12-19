@@ -1,3 +1,4 @@
+import NotFounds from 'components/PagesComponents/NotFound/404';
 import { Helmet } from 'react-helmet';
 
 const NotFound = () => {
@@ -6,7 +7,7 @@ const NotFound = () => {
       <Helmet>
         <title>404 Not Found</title>
       </Helmet>
-      <div>404 Not Found</div>
+      <NotFounds />
     </>
   );
 };
