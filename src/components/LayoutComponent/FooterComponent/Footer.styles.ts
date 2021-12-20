@@ -7,7 +7,7 @@ export const Footer = styled.footer`
   background-color: ${colours.carchoal};
   border-radius: 30px 30px 0px 0px;
   color: #000;
-  margin-top: 30px;
+  margin-top: 120px;
 
   @media screen and (max-width: 600px) {
     margin-top: 30px;
